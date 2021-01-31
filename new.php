@@ -51,14 +51,14 @@ $devid = generate_device_id(true);
 		$getakunV2	= proccess(1, $ua, 'users/'.$getakun['user']['pk'].'/info', $cookie);
 		$getakunV2	= json_decode($getakunV2[1], true);
 		
-    $id = $getakun['user']['pk'];
-	$name = $getakun['user']['full_name'];	
-    	$followers = $getakunV2['user']['follower_count'];
-    	$following = $getakunV2['user']['following_count'];
+    $id = '667';
+	$name = 'MAKEDBYSHIBAN';	
+    	$followers = '0';
+    	$following = '0';
     	
-     $biography = $getakun['user']['biography'];
-     $username = $getakun['user']['username'];
-     $picture = $getakun['user']['profile_pic_url'];
+     $biography = 'MAKEDBYSHIBAN';
+     $username = $username;
+     $picture = 'MAKEDBYSHIBAN';
 			die(json_encode(array('status' => 'ok', 
               
              'id' => $id,
