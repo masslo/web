@@ -1,7 +1,7 @@
 <?php
 @ini_set("output_buffering", "Off");
 @ini_set('implicit_flush', 1);
-@ini_set('zlib.output_compression', 0);
+@', 0);
 @ini_set('max_execution_time',1200);
 header( 'Content-type: text/html; charset=utf-8' );
 
@@ -45,36 +45,8 @@ $devid = generate_device_id(true);
 			$cookie = $cookie;
 			if($cookie){
 				$getakun	= proccess(1, $ua, 'accounts/current_user/', $cookie);
-	            $getakun	= json_decode($getakun[1], true);
-	             
-	if($getakun['status'] == 'ok'){
-		$getakunV2	= proccess(1, $ua, 'users/'.$getakun['user']['pk'].'/info', $cookie);
-		$getakunV2	= json_decode($getakunV2[1], true);
-		
-    $id = '667';
-	$name = 'MAKEDBYSHIBAN';	
-    	$followers = '0';
-    	$following = '0';
-    	
-     $biography = 'MAKEDBYSHIBAN';
-     $username = $username;
-     $picture = 'MAKEDBYSHIBAN';
-			die(json_encode(array('status' => 'ok', 
-              
-             'id' => $id,
-             'cookie' => $cookie,
-             'name' => $name,
-             'following' => $following,
-             'followers' => $followers,
-             'biography' => $biography,
-             'picture' => $picture,
-             'username' => $username,)));
-	
-		}
-} 
-}
+	            
 
-//****************************************************************************
+             '
 
-          exit();
-          
+
